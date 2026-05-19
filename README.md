@@ -1,32 +1,24 @@
 # Hackathon Project - The Green Mask
-Beneath the Surface
-Discovering what is hidden, unseen, ignored, or deeper than what people first notice.
-📋 Overview
-Environmental Truth Scanner is an interactive web application that reveals the hidden environmental damage lurking beneath beautiful, pristine landscapes. Using an innovative before/after slider interface, users can "scan" different locations to expose the toxic reality that lies beneath the surface.
-This project was built for BasisHacks 2026 and directly addresses the theme by exposing:
-  - Unseen environmental damage
-  - Hidden pollution and toxicity
-  - The gap between appearance and reality in our ecosystems
-  - 
+# Overview
+The Green Mask is an interactive web application designed to reveal the hidden environmental damage lurking beneath beautiful, pristine landscapes. Built for BasisHacks 2026, this project interprets the theme "Beneath the Surface" by allowing users to "scan" different environments and expose the toxic reality that often goes unnoticed. Through an innovative before-and-after slider interface, we demonstrate that what appears perfect on the surface often hides critical ecological crises underneath.
 # Features
-✨ Interactive Before/After Slider
-Drag to reveal hidden environmental damage
-Smooth, responsive slider interface
-Works on both desktop and mobile devices
-🗺️ 6 Scannable Locations
-Emerald Valley Forest - Soil contamination & biodiversity loss
-Crystal Bay Beach - Plastic pollution & microplastics
-Metropolitan Skyline - Air quality crisis & underground contamination
-Arctic Ice Fields - Black carbon acceleration & industrial waste
-Golden Valley Farms - Pesticide runoff & soil degradation
-Mountain Lake Reserve - Industrial dumping & heavy metals
-📊 Detailed Analysis Reports
-Each location includes:
-Threat level assessment (Critical/Severe/Extreme/High)
-Hidden facts revealed by AI scanning
-Specific environmental impact data
-Intuitive Navigation
-Home page with location cards
-Previous/Next navigation between scans
-Progress tracking (Location X of 6)
-"Complete Scan" functionality
+- Interactive "Surface vs. Beneath" Slider: A smooth, responsive HTML/CSS/JS slider that lets users drag and reveal hidden pollution, degradation, and toxicity in real-time. 
+- 6 Diverse Scannable Locations: Explore distinct environments including Emerald Valley Forest, Crystal Bay Beach, Metropolitan Skyline, Arctic Ice Fields, Golden Valley Farms, and Mountain Lake Reserve.
+- Deep Analysis Reports: Each location provides a generated "scan report" detailing specific hidden facts, such as soil contamination levels, microplastic density, and biodiversity loss.
+- Dynamic Navigation: A seamless browsing experience with a home dashboard, progress tracking (Location X of 6), and intuitive "Previous/Next" navigation between scans.
+- Tech Stack: Built purely with Python (Flask) for the backend and HTML/CSS/Vanilla JavaScript for the frontend—no external libraries required.
+# Prerequisites
+To run this application, you will need:
+- Python 3.7 or higher
+- Flask (Install via pip install Flask)
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Note: Ensure you have the 12 image files (6 "surface" images and 6 "beneath" images) placed correctly in the static/images/ folder for the scanner to work.
+# License
+This project is an open-source submission created for educational purposes during BasisHacks 2026. You are free to use, modify, and distribute this code for non-commercial learning and hackathon projects, provided you credit the original creators.
+# Acknowledgements
+BasisHacks 2026: For the inspiring theme "Beneath the Surface" and the platform to explore creative technical solutions.
+Environmental Research: The hidden facts and data points used in this application are inspired by real-world environmental studies regarding pollution, climate change, and ecosystem degradation.
+Open Source Community: For the robust tools (Python and Flask) that made this rapid development possible.
+# Contact
+For questions, suggestions, or collaboration inquiries, please contact:
+- Email: asa.hua201149-bigz@basischina.com
