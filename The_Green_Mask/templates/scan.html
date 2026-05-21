@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanning: {{ location.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">BasisHacks 2026</div>
+        <div class="stats">Location {{ current_index }} of {{ total_count }}</div>
+    </nav>
+
+    <div class="container scan-container">
+        <div class="scan-header">
+            <button class="back-btn" onclick="window.location.href='/'">← Home</button>
+            <h1>{{ location.name }}</h1>
+            <p>Drag slider to reveal damage</p>
+        </div>
+
+        <!-- Slider -->
+        <div class="comparison-slider" id="comparison-slider">
+            <div class="slider-image slider-image-beneath">
+                <img src="{{ url_for('static', filename='images/' + location.beneath_image) }}" alt="Beneath">
+                <div class="damage-label">⚠️ DAMAGE</div>
+            </div>
+            <div class="slider-image slider-image-surface" id="surface-layer">
+                <img src="{{ url_for('static', filename='images/' + location.surface_image) }}" alt="Surface">
+            </div>
+            <div class="slider-handle" id="slider-handle">
+                <span>◄►</span>
+            </div>
+        </div>
+
+        <!-- Data Panel -->
+        <div class="data-panel">
+            <h3>🔬 Report</h3>
+            <div class="data-row"><span>Location:</span><span>{{ location.name }}</span></div>
+            <div class="data-row"><span>Threat:</span><span class="high-risk">{{ location.toxicity }}</span></div>
+            <ul id="facts-list">
+                {% for fact in location.hidden_facts %}
+                <li>{{ fact }}</li>
+                {% endfor %}
+            </ul>
+            
+            <div class="button-group">
+                <!-- data-url is a simple string from Flask -->
+                <button id="prev-btn" class="nav-btn" data-url="{{ prev_url }}">← Previous</button>
+                <button id="complete-scan-btn" class="complete-btn">✓ Complete</button>
+                <button id="next-btn" class="nav-btn" data-url="{{ next_url }}">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

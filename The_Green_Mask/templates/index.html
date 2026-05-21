@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasisHacks 2026: Beneath the Surface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">BasisHacks 2026 <span class="theme">Beneath the Surface</span></div>
+        <div class="stats">Environmental Scanning Initiative</div>
+    </nav>
+
+    <div class="container home-container">
+        <div class="hero-section">
+            <h1>Environmental Truth Scanner</h1>
+            <p class="hero-subtitle">
+                What lies beneath the surface? Choose a location to reveal the hidden environmental damage.
+            </p>
+        </div>
+
+        <div class="locations-grid">
+            {% for location in locations %}
+            <div class="location-card" onclick="window.location.href='/scan/{{ location.id }}'">
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/' + location.surface_image) }}" 
+                         alt="{{ location.name }}">
+                    <div class="card-overlay">
+                        <span class="scan-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>{{ location.name }}</h3>
+                    <p class="card-status">Click to Scan</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="mission-statement">
+            <h2>Our Mission</h2>
+            <p>
+                Using advanced AI scanning technology to reveal the hidden environmental damage 
+                beneath beautiful surfaces. Every location tells a story - see what's really there.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
