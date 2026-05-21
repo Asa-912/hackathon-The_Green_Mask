@@ -16,9 +16,9 @@ To run this application, you will need:
 # License
 This project is an open-source submission created for educational purposes during BasisHacks 2026. You are free to use, modify, and distribute this code for non-commercial learning and hackathon projects, provided you credit the original creators.
 # Acknowledgements
-BasisHacks 2026: For the inspiring theme "Beneath the Surface" and the platform to explore creative technical solutions.
-Environmental Research: The hidden facts and data points used in this application are inspired by real-world environmental studies regarding pollution, climate change, and ecosystem degradation.
-Open Source Community: For the robust tools (Python and Flask) that made this rapid development possible.
+- BasisHacks 2026: For the inspiring theme "Beneath the Surface" and the platform to explore creative technical solutions.
+- Environmental Research: The hidden facts and data points used in this application are inspired by real-world environmental studies regarding pollution, climate change, and ecosystem degradation.
+- Open Source Community: For the robust tools (Python and Flask) that made this rapid development possible.
 # Contact
 For questions, suggestions, or collaboration inquiries, please contact:
 - Email: asa.hua201149-bigz@basischina.com
