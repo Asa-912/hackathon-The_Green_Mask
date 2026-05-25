@@ -21,4 +21,5 @@ This project is an open-source submission created for educational purposes durin
 - Open Source Community: For the robust tools (Python and Flask) that made this rapid development possible.
 # Contact
 For questions, suggestions, or collaboration inquiries, please contact:
-- Email: asa.hua201149-bigz@basischina.com
+- Email: asa.hua201149-bigz@basischina.com & tszsen.zhu13580-bigz@basischina.com
+- Youtube Demo Video: https://youtu.be/QRu_-NrnDnw
